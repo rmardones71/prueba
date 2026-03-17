@@ -1,0 +1,61 @@
+/*
+  Objetivo: que el logo ocupe todo el ancho del brand (responsivo),
+  manteniendo proporción y conmutando FULL ↔ NARROW sin duplicados.
+*/
+
+/* Altura del área de brand del sidebar (ajusta a tu gusto) */
+:root {
+  /* 56px suele ser el default; sube a 64/72/80 si quieres más presencia */
+  --cui-sidebar-brand-height: 120px;
+
+ 
+  /* Fondo general de la app/página */
+  --cui-body-bg: #ffffff;
+
+  /* Fondo del sidebar (CoreUI) */
+  --cui-sidebar-bg: #ffffff;
+
+
+}
+
+/* Header del sidebar consistente con la altura del brand */
+.sidebar .sidebar-header {
+  min-height: var(--cui-sidebar-brand-height, 0px);
+}
+
+/* Layout del brand: menos padding para aprovechar el ancho */
+.sidebar .sidebar-brand {
+  padding: 0.5rem 0.75rem;        /* ajusta si quieres aún menos */
+  display: flex;
+  align-items: center;
+  justify-content: center;        /* centra la imagen horizontalmente */
+}
+
+/* FULL: visible por defecto y ocupando ancho completo */
+.sidebar .sidebar-brand .sidebar-brand-full {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+  max-height: var(--cui-sidebar-brand-height, 72px);
+}
+
+/* NARROW: oculto por defecto */
+.sidebar .sidebar-brand .sidebar-brand-narrow {
+  display: none !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+  max-height: var(--cui-sidebar-brand-height, 72px);
+}
+
+/* Conmutación al plegar el sidebar */
+.sidebar.sidebar-narrow .sidebar-brand .sidebar-brand-full {
+  display: none !important;
+}
+.sidebar.sidebar-narrow .sidebar-brand .sidebar-brand-narrow {
+  display: block !important;
+}
+
+/* (Opcional) Si tu PNG tiene márgenes transparentes, recórtalo para que
+   realmente “llene” el ancho. Este CSS no puede quitar ese margen. */

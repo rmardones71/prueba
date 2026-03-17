@@ -1,0 +1,94 @@
+// ---------------------------------------------------
+// Typography
+// ---------------------------------------------------
+
+$font-family-base: 'Poppins', sans-serif;
+$font-size-base: 0.95rem;
+$font-weight-base: 400;
+
+$h1-font-size: 2rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.25rem;
+$h5-font-size: 1.1rem;
+$h6-font-size: 1rem;
+
+$headings-font-weight: 600;
+
+
+// ---------------------------------------------------
+// Colors
+// ---------------------------------------------------
+
+$primary: #321fdb;
+$secondary: #9da5b1;
+$success: #2eb85c;
+$info: #39f;
+$warning: #f9b115;
+$danger: #e55353;
+$light: #ebedef;
+$dark: #4f5d73;
+
+
+// ---------------------------------------------------
+// Sidebar
+// ---------------------------------------------------
+
+$sidebar-width: 256px;
+$sidebar-bg: #3c4b64;
+$sidebar-color: #ffffff;
+
+$sidebar-nav-link-padding-x: 1rem;
+$sidebar-nav-link-padding-y: 0.75rem;
+
+$sidebar-nav-link-font-weight: 500;
+
+
+// ---------------------------------------------------
+// Navbar
+// ---------------------------------------------------
+
+$header-height: 4rem;
+$header-bg: #ffffff;
+$header-color: #4f5d73;
+
+
+// ---------------------------------------------------
+// Buttons
+// ---------------------------------------------------
+
+$btn-font-weight: 500;
+$btn-border-radius: 6px;
+
+
+// ---------------------------------------------------
+// Cards
+// ---------------------------------------------------
+
+$card-border-radius: 10px;
+$card-border-width: 0;
+$card-box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+
+// ---------------------------------------------------
+// Tables
+// ---------------------------------------------------
+
+$table-cell-padding-y: 0.75rem;
+$table-cell-padding-x: 0.75rem;
+
+
+// ---------------------------------------------------
+// Forms
+// ---------------------------------------------------
+
+$input-border-radius: 6px;
+$input-padding-y: 0.5rem;
+$input-padding-x: 0.75rem;
+
+
+// ---------------------------------------------------
+// Spacing
+// ---------------------------------------------------
+
+$spacer: 1rem;
